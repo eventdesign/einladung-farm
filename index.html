@@ -32,7 +32,7 @@
   /* ===== SZENE 1 + 2: SCHEUNE (geschlossen → öffnet, Traktor fährt ein) ===== */
   .intro{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;
     background:radial-gradient(120% 80% at 50% 32%, #dbe2cf 0%, #bcc9aa 55%, #9db08f 100%);
-    transition:opacity .9s ease, visibility .9s;max-width:480px;margin:0 auto;left:50%;transform:translateX(-50%);}
+    transition:opacity .9s ease, visibility .9s;max-width:480px;margin:0 auto;}
   .intro.gone{opacity:0;visibility:hidden;pointer-events:none;}
   .intro .top{font-family:'Great Vibes',cursive;color:#5f7358;font-size:44px;margin-bottom:2px;}
   .barn-btn{background:none;border:none;cursor:pointer;padding:0;filter:drop-shadow(0 12px 18px rgba(50,65,40,.25));}
@@ -42,7 +42,7 @@
   .barn-open{inset:0;width:100%;height:100%;z-index:1;}
   .barn-closed{inset:0;width:100%;height:100%;z-index:3;transition:opacity .6s ease;}
   .barn-btn.open .barn-closed{opacity:0;}
-  .barn-tractor{z-index:2;left:33%;top:66%;width:34%;height:auto;opacity:0;transform:translateX(-260%);}
+  .barn-tractor{z-index:2;left:35%;top:65%;width:34%;height:auto;opacity:0;transform:translateX(-260%);}
   .barn-btn.open .barn-tractor{animation:driveIntoBarn 1.05s .55s cubic-bezier(.32,.68,.3,1) forwards;}
   @keyframes driveIntoBarn{0%{transform:translateX(-260%);opacity:1;}100%{transform:translateX(0);opacity:1;}}
   .acc{position:absolute;bottom:-6px;}
